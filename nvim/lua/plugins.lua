@@ -86,10 +86,12 @@ require("blink.cmp").setup({
 	},
 })
 
+-- local lualine_theme = require('lualine_theme');
 require("lualine").setup({
 	options = {
 		icons_enabled = false,
-		theme = 'auto',
+		-- theme = lualine_theme,
+		theme = "auto",
 		section_separators = "",
 		component_separators = "",
 		padding = 1,
@@ -114,12 +116,13 @@ require("lualine").setup({
 		},
 	},
 	sections = {
-		lualine_a = { "filename" },
+		lualine_a = {},
 		lualine_b = {},
-		lualine_c = {},
-		lualine_x = {},
-		lualine_y = {"%l/%L", "progress" },
-		lualine_z = { "location" },
+		lualine_c = {"filename"},
+		lualine_x = {"%l/%L"},
+		-- lualine_y = {"%l/%L", "progress" },
+		lualine_y = {},
+		lualine_z = {},
 	},
 	inactive_sections = {
 		lualine_a = {},

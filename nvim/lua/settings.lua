@@ -33,15 +33,15 @@ o.hlsearch = false
 o.inccommand = "split"
 
 -- Allow code folding
-o.foldenable = true
-vim.wo.foldcolumn = "1"
-vim.wo.foldmethod = "expr"
-vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-vim.o.foldexpr = "nvim_treesitter#foldexpr()"
-
-o.foldlevelstart = 99
-o.foldnestmax = 15
-o.foldtext = ""
+o.foldenable = false
+-- vim.wo.foldcolumn = "1"
+-- vim.wo.foldmethod = "expr"
+-- vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+-- vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+--
+-- o.foldlevelstart = 99
+-- o.foldnestmax = 15
+-- o.foldtext = ""
 -- o.signcolumn = "yes"
 
 o.cmdheight = 0
