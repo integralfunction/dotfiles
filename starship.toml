@@ -1,0 +1,20 @@
+# format = """$directory\
+# """
+# format = "[$directory ∫ ](bold)"
+# format = "[$directory ∑ ](bold)"
+# format = "[$directory ∏ ](bold)"
+format = "[$directory ≽ ](bold)"
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+[line_break]
+disabled = true
+
+[directory]
+format = "[$path](bold)"
+truncation_length = 3
+truncation_symbol = ".../"
+
+[directory.substitutions]
+"~" = "~"
